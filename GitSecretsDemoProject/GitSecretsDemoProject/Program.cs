@@ -42,7 +42,7 @@ namespace GitSecretsDemoProject
                     var encrypted = TemporalMagic.Encrypt(password);
 
                     Console.WriteLine("Encrypted: " + encrypted);
-                    Clipboard.SetText(encrypted);
+                    Clipboard.SetText("SecretHelper.Reveal(\""+encrypted+"\")");
 
                     Console.WriteLine();
                     Console.WriteLine("Copied to clipboard");
